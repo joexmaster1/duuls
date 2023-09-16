@@ -9,4 +9,4 @@
 ### UPDATE SCRIPT
 <pre><code>wget https://raw.githubusercontent.com/joexmaster1/duuls/main/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
-### JARWO KONTOL
+### JARWO KONTOL NGACENGAN KIMCIL
