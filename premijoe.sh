@@ -53,7 +53,7 @@ logofigh() {
     echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  JOEXMASTER AUTOSCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "   Auther : ${green}JOEXMASTER ${NC}${YELLOW}(${NC} ${green}JOEXMASTER ${NC}${YELLOW})${NC}"
+echo -e "   Auther : ${green}JOEXMASTER ${NC}${YELLOW}(${NC} ${green}NIAMXMASTER ${NC}${YELLOW})${NC}"
 echo -e "  © Recode By JOEXMASTER ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
