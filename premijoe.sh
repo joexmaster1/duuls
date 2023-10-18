@@ -384,9 +384,12 @@ install_cert() {
     cat /etc/xray/xray.crt /etc/xray/xray.key | tee /etc/haproxy/yha.pem
     chown www-data.www-data /etc/xray/xray.key
     chown www-data.www-data /etc/xray/xray.crt
-    # "Installed slowdns"
-    wget -q -O /etc/nameserver "https://github.com/FighterTunnel/tunnel/raw/main/X-SlowDNS/nameserver" && bash /etc/nameserver >/dev/null 2>&1
-
+# // Installing UDP Mini
+print_install "Memasang modul SlowDNS Server"
+    wget -q -O /tmp/nameserver "${REPO}limit/nameserver" >/dev/null 2>&1
+    chmod +x /tmp/nameserver
+    bash /tmp/nameserver | tee /root/install.log
+ print_success "SlowDNS"
 }
 
 download_config() {
