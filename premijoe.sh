@@ -53,7 +53,7 @@ logofigh() {
     echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  JOEXMASTER AUTOSCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "   Auther : ${green}JOEXMASTER ${NC}${YELLOW}(${NC} ${green}JOEXMASTER ${NC}${YELLOW})${NC}"
+echo -e "   Auther : ${green}JOEXMASTER ${NC}${YELLOW}(${NC} ${green}NIAMXMASTER ${NC}${YELLOW})${NC}"
 echo -e "  © Recode By JOEXMASTER ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
@@ -109,9 +109,9 @@ clear
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "   '----------------------------------'"
 echo -e "     \e[1;32m1)\e[0m Enter Your Subdomain"
-echo -e "     \e[1;32m2)\e[0m Use a Random Subdomain"
+echo -e "     \e[1;32m2)\e[0m Use a Custom Subdomain"
 echo -e "   ------------------------------------"
-read -p "   Please select numbers 1-2 or Any Button(Random) : " host
+read -p "   Please select numbers 1-2 or Any Button(Custom) : " host
 echo ""
 if [[ $host == "1" ]]; then
 echo -e "   \e[1;32mPlease Enter Your Subdomain $NC"
@@ -126,7 +126,7 @@ wget ${REPO}ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
-print_install "Random Subdomain/Domain is Used"
+print_install "Custom Subdomain/Domain is Used"
 wget ${REPO}cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
@@ -555,7 +555,7 @@ restart_system() {
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>⚠️AUTOSCRIPT PREMIUM⚠️</b>
+<b>⚠️JOE SCRIPT AUTO POINTING⚠️</b>
 <code>────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
@@ -564,8 +564,6 @@ restart_system() {
 <code>Ip vps : </code><code>$ipsaya</code>
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
-<i>Automatic Notification from</i>
-<i>Github FighterTunnel</i> 
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/yha_bot"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://t.me/channel_fightertunnell/25"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
     cp /etc/openvpn/*.ovpn /var/www/html/
