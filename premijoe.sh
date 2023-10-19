@@ -554,17 +554,17 @@ restart_system() {
     EXPSC=$(wget -qO- https://sc-xray.yha.my.id/ip | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
-<code>────────────────────</code>
-<b>⚠️JOE SCRIPT AUTO POINTING⚠️</b>
-<code>────────────────────</code>
+<code>──────────────────────</code>
+<b>⚠️JOEXMASTER SCRIPT INSTALLER⚠️</b>
+<code>──────────────────────</code>
 <code>ID     : </code><code>$USRSC</code>
 <code>Domain : </code><code>$domain</code>
 <code>Date   : </code><code>$TIME</code>
 <code>Time   : </code><code>$TIMEZONE</code>
 <code>Ip vps : </code><code>$ipsaya</code>
 <code>Exp Sc : </code><code>$EXPSC</code>
-<code>────────────────────</code>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/yha_bot"},{"text":"ɪɴꜱᴛᴀʟʟ🐬","url":"https://t.me/channel_fightertunnell/25"}]]}'
+<code>───────────────────────</code>
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ🐳","url":"https://t.me/Lemontreee3"},{"text":"ᴅɪʀᴇᴄᴛ🐬","url":"https://t.me/orderjoessh"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
     cp /etc/openvpn/*.ovpn /var/www/html/
     sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
