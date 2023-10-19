@@ -17,8 +17,8 @@ CITY=$(wget -qO- ipinfo.io/city)
 TIME=$(date '+%d %b %Y')
 REPO="https://raw.githubusercontent.com/joexmaster1/duuls/main/"
 TIMES="10"
-CHATID="-1001707197017"
-KEY="5991497887:AAFXAUCGrhogt_ueavcgtq6GXN_Ftwu_KdM"
+CHATID="6463984888"
+KEY="6270975898:AAHd-1Jzboh7EUJuTbJJKFE0gLDI8nc-L_Q"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 
 source '/etc/os-release'
