@@ -1,10 +1,10 @@
 #!/bin/bash
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
-#read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=klmpk-tunneling.my.id
+#read -p "Masukan Domain (contoh : joestore)" domen
+DOMAIN=joebalap.com
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.klmpk-tunneling.my.id
+dns=${sub}.joebalap.com
 CF_ID=selowae436@gmail.com
 CF_KEY=e869ac5bd43f65200bc107cd05a32db7b6715
 set -euo pipefail
