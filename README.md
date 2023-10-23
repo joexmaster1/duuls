@@ -6,6 +6,8 @@
 ### INSTALL SCRIPT 
 <pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/joexmaster1/duuls/main/premi.sh && chmod +x premi.sh && screen -S install ./premi.sh
 </code></pre>
+<pre><code>apt install -y wget screen && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/joexmaster1/duuls/main/premijoe.sh && chmod +x premijoe.sh && screen -S install ./premijoe.sh
+</code></pre>
 ### UPDATE SCRIPT
 <pre><code>wget https://raw.githubusercontent.com/joexmaster1/duuls/main/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
